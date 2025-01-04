@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-image: linear-gradient(to top left, purple, yellow);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1vw 2vw;
+}
+
+.card .search {
+  padding: 15px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.search input {
+  padding: 10px 10px;
+  font-size: 19px;
+  border: 0;
+  outline: none;
+  border-radius: 8px;
+}
+
+.search button img {
+  width: 20px;
+  display: block;
+}
+
+.search button {
+  border-radius: 8px;
+  outline: none;
+  border: 0;
+  padding: 10px;
+}
+
+.weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  display: none;
+}
+
+.weather img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.temperature {
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+}
+
+.location {
+  font-size: 40px;
+  color: white;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.col1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+}
+.col1 img {
+  width: 50px;
+}
+
+@media screen and (max-width: 409px) {
+  .card {
+    padding: 1vw 2vw;
+  }
+  .search {
+    gap: 8px;
+    font-size: 17px;
+    flex-wrap: wrap;
+    padding: 8px;
+  }
+  .search input {
+    font-size: 16px;
+    padding: 8px 8px;
+    width: 50vw;
+  }
+  .search button {
+    padding: 4px;
+  }
+
+  .weather img {
+    width: 100px;
+  }
+  .col1 img {
+    width: 35px;
+  }
+  .col1 p{
+    font-size: 14px;
+  }
+  .temperature {
+    font-size: 40px;
+  }
+  .location {
+    font-size: 25px;
+  }
+  .details {
+    gap: 12px;
+    padding-bottom: 15px;
+  }
+}
